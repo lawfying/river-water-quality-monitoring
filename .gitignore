@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+venv/
+.env
+*.sqlite3
+*.db
+*.pkl
+*.pt
+*.pth
+*.csv
