@@ -27,8 +27,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from water_quality_index import compute_wqi, classify_wqi, wqi_predict_proba, WQI_PARAMS
 
 # ========== 默认 API Key 配置 ==========
-# 方式1：代码内默认（方便自动连接）
-DEFAULT_DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
+# 请填写 DeepSeek API Key；也可设置 DEEPSEEK_API_KEY 环境变量
+DEFAULT_DEEPSEEK_API_KEY = "YOUR_DEEPSEEK_API_KEY"
 
 # 方式2：环境变量（优先）
 # 如果设置了环境变量，优先使用环境变量；否则用默认
