@@ -1024,7 +1024,7 @@ elif page == "🤖 LLM智能报告":
             "DeepSeek API Key（可选）",
             type="password",
             value=default_key,  # 默认填入
-            placeholder="[REDACTED]",
+            placeholder="请填入 DeepSeek API Key",
             help="已自动填入默认Key，可更换为您自己的Key"
         )
     
@@ -1041,7 +1041,7 @@ elif page == "🤖 LLM智能报告":
             st.warning("⚠️ 请修改API Key或勾选使用默认")
     
     # 验证Key是否有效
-    if not api_key or api_key == "[REDACTED]":
+    if not api_key or api_key == "YOUR_DEEPSEEK_API_KEY":
         st.error("❌ 未配置有效的 DeepSeek API Key")
         st.stop()
     
